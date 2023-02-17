@@ -1,9 +1,14 @@
 {
   "name": "taro-plugin-string-style",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "支持在react中使用字符串style的taro插件",
   "repository": "github:yujingwyh/taro-plugin-string-style",
   "main": "./index.js",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "dependencies": {
     "style-to-object": "^0.4.1"
   }

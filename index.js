@@ -12,11 +12,11 @@ const content = `
   }
 `
 
-export default (ctx) => {
+module.exports =  (ctx) => {
     ctx.onBuildStart(() => {
-        const reactDevelopmentPath = path.resolve(__dirname, '../node_modules/react/cjs/react.development.js')
+        const reactDevelopmentPath = path.resolve(__dirname, '../react/cjs/react.development.js')
         const reactDevelopmentContent = fs.readFileSync(reactDevelopmentPath, 'utf8')
-        const reactProductionPath = path.resolve(__dirname, '../node_modules/react/cjs/react.production.min.js');
+        const reactProductionPath = path.resolve(__dirname, '../react/cjs/react.production.min.js');
         const reactProductionContent = fs.readFileSync(reactProductionPath, 'utf8')
 
         if (reactDevelopmentContent.indexOf(content) === -1) {
