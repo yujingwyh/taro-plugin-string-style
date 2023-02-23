@@ -4,8 +4,6 @@
 
 ## 如何使用
 
-`如果出现找不到 style-to-object，手动执行下这个安装下包 npm i style-to-object --save`
-
 1. 安装npm包 <br />
 `npm i taro-plugin-string-style --save-dev`
 
